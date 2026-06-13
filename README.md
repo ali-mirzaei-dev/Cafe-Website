@@ -12,7 +12,7 @@ The project is still in progress.
 
 ## 🚀 Live Demo
 
-Coming soon.
+👉 https://ali-mirzaei-dev.github.io/Cafe-Website/
 
 ---
 
