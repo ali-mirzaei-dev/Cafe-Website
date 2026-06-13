@@ -1,0 +1,313 @@
+:root {
+    --blackygray: #24292d;
+    --darkgray: #282b2f;
+    --lightgray: #313539;
+    --honey: #ae895d;
+}
+
+
+main {
+    min-height: 1600px;
+    position: relative;
+
+    /*================== HEADER STYLE ==================*/
+    /*==================================================*/
+    >header {
+        width: 20%;
+        max-width: 300px;
+        min-height: 100vh;
+        background-color: var(--darkgray);
+        color: white;
+        text-transform: capitalize;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        padding: 25px 0;
+        position: sticky;
+        top: 0;
+        left: 0;
+        align-self: self-start;
+        row-gap: 50px;
+
+        /*================== LOGO STYLE ==================*/
+        >section {
+            width: 100%;
+            height: 35%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            >figure {
+                width: 40%;
+                height: 40%;
+
+                >img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: contain;
+                }
+            }
+        }
+
+        /*================== MENU STYLE ==================*/
+        >nav {
+            width: 100%;
+            height: 50%;
+            font-size: 18px;
+            line-height: 60px;
+
+            >ul {
+
+                >li {
+                    display: flex;
+                    transition: 0.4s;
+
+                    &:first-of-type {
+                        color: var(--honey);
+                    }
+
+                    &:hover {
+                        color: var(--honey);
+                    }
+
+
+                    >a {
+                        width: 100%;
+                        height: 100%;
+                        text-align: center;
+                        border-top: 1px solid #313539;
+                        border-bottom: 1px solid #313539;
+                    }
+                }
+            }
+        }
+
+        /*================== SOCIALS STYLE ==================*/
+        >div {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            row-gap: 10px;
+
+            >h6 {
+                font-size: 30px;
+                color: #ae895d74;
+            }
+
+            >p {
+                font-size: 20px;
+                color: #ae895d3e;
+                text-transform: uppercase;
+                margin-bottom: 10px;
+            }
+
+            >ul {
+                display: flex;
+                gap: 10px;
+                justify-content: center;
+                align-items: center;
+                padding-bottom: 20px;
+
+                >li {
+                    height: 30px;
+
+                    &:nth-of-type(2) {
+                        height: 25px;
+
+                    }
+
+                    &:nth-of-type(3) {
+                        height: 25px;
+
+                    }
+
+                    >a {
+                        >img {
+                            width: 100%;
+                            height: 100%;
+                            object-fit: cover;
+                        }
+                    }
+                }
+            }
+        }
+
+
+    }
+
+    /*================== CONTENT STYLE ==================*/
+    /*===================================================*/
+    >section {
+        flex: 1;
+
+        >div {
+            display: flex;
+
+            /*==================#1 HERO STYLE ==================*/
+            &:first-of-type {
+                background-image: url(../Images/hero.jpeg);
+                background-size: cover;
+                height: 100vh;
+
+
+
+            }
+
+            /*==================#2 FOOD STYLE ==================*/
+            &:nth-of-type(2) {
+
+                >div {
+                    display: flex;
+                    flex-wrap: wrap;
+
+                    /*================== LEFT STYLE ==================*/
+                    &:first-of-type {
+                        width: 66.666%;
+                        padding: 90px 80px;
+                        background-color: var(--lightgray);
+                        row-gap: 40px;
+
+                        >* {
+                            width: 100%;
+                            text-transform: uppercase;
+                        }
+
+                        >h1 {
+                            font-size: 50px;
+                            font-weight: lighter;
+                            color: white;
+                        }
+
+                        >p {
+                            font-size: 16px;
+                            color: var(--honey);
+                        }
+
+                        >div {
+                            display: flex;
+                            gap: 5%;
+
+                            &:first-of-type {
+                                width: 36%;
+                                height: 1px;
+                                background-color: #ae895d;
+                            }
+
+                            &:last-of-type {
+                                >figure {
+                                    width: 45%;
+                                    height: 185px;
+
+                                    >img {
+                                        width: 100%;
+                                        height: 100%;
+                                        object-fit: cover;
+                                    }
+                                }
+                            }
+                        }
+
+                        >span {
+                            margin-top: 15px;
+                            color: rgb(191, 191, 191);
+                            line-height: 30px;
+                            text-transform: none;
+                        }
+
+                        >button {
+                            height: 60px;
+                            width: fit-content;
+                            background-color: transparent;
+                            border: 2px solid white;
+                            color: white;
+                            border-radius: 5px;
+                            transition: 0.4s;
+
+                            >a {
+                                width: 100%;
+                                height: 100%;
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                padding: 20px;
+                            }
+
+                            &:hover {
+                                background-color: rgba(255, 255, 255, 0.064);
+                            }
+                        }
+                    }
+
+                    /*================== RIGHT STYLE ==================*/
+                    &:last-of-type {
+                        width: 33.333%;
+                        background-image: url(../Images/chair.jpeg);
+                        background-size: cover;
+                    }
+                }
+            }
+
+            /*==================#3 RESERVATION STYLE ==================*/
+            &:nth-of-type(3) {
+                height: 670px;
+                background-image: url(../Images/wines.jpeg);
+                background-position: center;
+                background-size: cover;
+                justify-content: center;
+                align-content: center;
+                flex-wrap: wrap;
+                row-gap: 40px;
+                padding: 20% 18%;
+
+                >* {
+                    color: white;
+                    text-align: center;
+                    width: 100%;
+                }
+
+                >h2 {
+                    text-transform: uppercase;
+                    font-size: 50px;
+                    font-weight: lighter;
+                }
+
+                >div {
+                    width: 18%;
+                    height: 1px;
+                    background-color: var(--honey);
+                }
+
+                >span {
+                    font-size: 25px;
+                    line-height: 45px;
+                }
+
+                >button {
+                    width: fit-content;
+                    background-color: transparent;
+                    height: 60px;
+                    border: 1px solid white;
+                    font-size: 18px;
+                    border-radius: 5px;
+                    transition: 0.4s;
+                    text-transform: uppercase;
+
+                    >a {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        padding: 0 40px;
+                        width: 100%;
+                        height: 100%;
+                    }
+
+                    &:hover {
+                        background-color: rgba(255, 255, 255, 0.064);
+                    }
+                }
+            }
+        }
+    }
+}
