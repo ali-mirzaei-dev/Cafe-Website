@@ -7,7 +7,6 @@
 
 
 main {
-    min-height: 1600px;
     position: relative;
 
     /*================== HEADER STYLE ==================*/
@@ -84,7 +83,7 @@ main {
         }
 
         /*================== SOCIALS STYLE ==================*/
-        >div {
+        /* >div {
             display: flex;
             justify-content: center;
             align-items: center;
@@ -132,7 +131,7 @@ main {
                     }
                 }
             }
-        }
+        } */
 
 
     }
@@ -314,7 +313,6 @@ main {
 
                 >div {
                     width: 50%;
-                    /* height: 430px; */
                     display: flex;
                     align-content: start;
                     flex-wrap: wrap;
@@ -350,6 +348,7 @@ main {
                         color: white;
                         border: 2px solid white;
                         border-radius: 5px;
+                        transition: 0.4s;
 
                         >a {
                             font-size: 18px;
@@ -386,23 +385,61 @@ main {
                     width: 25%;
                     transition: 0.4s;
                     background-color: var(--blackygray);
+                    display: flex;
+                    justify-content: center;
+                    flex-wrap: wrap;
+                    flex: 1;
 
-                    >img {
+                    >div {
+                        position: relative;
                         width: 100%;
                         height: 80%;
-                        object-fit: cover;
-                        border-right: 2px solid black;
-                        border-left: 2px solid black;
+                        overflow: hidden;
+
+                        &:hover {
+
+                            >img {
+                                scale: 1.1;
+                            }
+
+                            &::after {
+                                opacity: 0.4;
+                            }
+
+                        }
+
+                        >img {
+                            width: 100%;
+                            height: 100%;
+                            object-fit: cover;
+                            border-right: 2px solid black;
+                            border-left: 2px solid black;
+                            transition: 0.8s;
+                        }
+
+                        &::after {
+                            content: "";
+                            width: 100%;
+                            height: 100%;
+                            background-color: var(--honey);
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                            opacity: 0;
+                            transition: 0.4s;
+                        }
                     }
 
                     >figcaption {
                         font-size: 20px;
                         text-transform: uppercase;
                         color: white;
-                        display: flex;
-                        justify-content: center;
-                        align-items: center;
                         padding: 30px 10px;
+                        transition: 0.4s;
+
+                        &:hover {
+                            color: var(--honey);
+                        }
                     }
 
                     &:first-of-type {
@@ -423,17 +460,191 @@ main {
                             border-right: none;
                         }
                     }
-
-
                 }
+            }
+        }
+    }
+
+    /*================== FOOTER STYLE ==================*/
+    /*==================================================*/
+    footer {
+        padding: 0 5% 0 25%;
+        background-color: var(--lightgray);
+        height: max-content;
+
+
+        >div {
+
+            height: 33.33%;
+            width: 100%;
+            border-bottom: 2px solid rgb(93, 100, 107);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            padding: 50px 0;
+
+            &:first-of-type {
+
+                >figure {
+                    height: 90px;
+
+                    >img {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: contain;
+                    }
+                }
+            }
+
+            &:nth-of-type(2) {
+                >div {
+                    display: flex;
+                    justify-content: center;
+                    flex-wrap: wrap;
+                    line-height: 30px;
+
+                    >* {
+                        transition: 0.4s;
+
+                    }
+
+                    >img {
+                        width: 40px;
+                        height: 40%;
+                        object-fit: cover;
+
+                        &:hover {
+                            scale: 1.1;
+                        }
+                    }
+
+                    >a {
+                        width: 100%;
+                        font-size: 20px;
+                        color: white;
+                        text-align: center;
+                        margin-top: 20px;
+                        text-transform: uppercase;
+
+                        &:hover {
+                            color: var(--honey);
+                        }
+                    }
+                }
+            }
 
 
 
 
+            &:last-of-type {
+                border: none;
 
+                >div {
+                    display: flex;
+                    flex-wrap: wrap;
 
+                    /*==================#1 LEFT STYLE ==================*/
+                    &:first-of-type {
+                        width: 50%;
+                        justify-content: center;
+                        position: relative;
+                        z-index: 1;
 
+                        >figure {
+                            height: 300px;
+                            border: 5px solid black;
+                            padding: 5px;
 
+                            >img {
+                                width: 100%;
+                                height: 100%;
+                                object-fit: cover;
+                                position: relative;
+                                z-index: 2;
+                            }
+
+                            &::after {
+                                content: "";
+                                width: 220px;
+                                height: 230px;
+                                background-color: var(--honey);
+                                position: absolute;
+                                top: calc(50% - 115px);
+                                left: calc(50% - 110px);
+                                z-index: -1;
+                            }
+                        }
+                    }
+
+                    /*==================#2 RIGHT STYLE ==================*/
+                    &:last-of-type {
+                        width: 50%;
+                        row-gap: 10px;
+
+                        >* {
+                            width: 100%;
+                        }
+
+                        >h6 {
+                            font-size: 40px;
+                            color: var(--honey);
+                            text-transform: capitalize;
+                        }
+
+                        >p {
+                            font-size: 20px;
+                            text-transform: uppercase;
+                            color: #dcb0799a;
+                        }
+
+                        >div {
+                            width: 60%;
+                            height: 2px;
+                            background-color: rgb(93, 100, 107);
+                        }
+
+                        /*================== SOCIALS STYLE ==================*/
+                        >ul {
+                            display: flex;
+                            column-gap: 50px;
+                            align-items: center;
+                            background-color: #ae895d;
+                            width: max-content;
+                            margin-top: 50px;
+                            padding: 20px 30px;
+                            border-radius: 70% 30% 70% 30% / 0% 100% 0% 100%;
+                            transition: 1s;
+
+                           
+
+                            >li {
+                                height: 30px;
+                                transition: 0.4s;
+
+                                &:nth-of-type(2) {
+                                    height: 20px;
+                                }
+
+                                &:nth-of-type(3) {
+                                    height: 25px;
+                                }
+
+                                >a {
+                                    >img {
+                                        width: 100%;
+                                        height: 100%;
+                                        object-fit: cover;
+                                    }
+                                }
+
+                                &:hover {
+                                    scale: 1.1;
+                                }
+                            }
+                        }
+                    }
+                }
             }
         }
     }
