@@ -16,9 +16,16 @@ The project is still in progress.
 
 ---
 
-## 📸 Preview
+## 📸 Screenshots
 
-Screenshots will be added as development progresses.
+### Homepage
+
+![Homepage](github.com/user-attachments/assets/2c0788dc-fffb-4a73-9fa5-9d526f5d77af)
+
+### Featured Content Section
+
+![Featured Content Section](https://github.com/user-attachments/assets/c9157377-b931-427d-beea-8e09a3a91891)
+
 
 ---
 
