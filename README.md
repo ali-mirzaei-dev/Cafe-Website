@@ -39,6 +39,13 @@ The purpose of this project is to practice:
 * CSS3
 
 ---
+## ⚠️ Disclaimer
+
+This project is a front-end practice exercise inspired by the Avada website.
+
+It is intended for educational and portfolio purposes only and is not affiliated with or endorsed by Avada.
+
+---
 
 ## 👨‍💻 Author
 
