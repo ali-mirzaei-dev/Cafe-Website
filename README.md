@@ -20,7 +20,7 @@ The project is still in progress.
 
 ### Homepage
 
-![Homepage](github.com/user-attachments/assets/2c0788dc-fffb-4a73-9fa5-9d526f5d77af)
+![Homepage](https://github.com/user-attachments/assets/2c0788dc-fffb-4a73-9fa5-9d526f5d77af)
 
 ### Featured Content Section
 
