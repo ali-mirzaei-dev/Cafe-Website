@@ -4,12 +4,6 @@ This project is currently under development and is being recreated as part of my
 
 ---
 
-## 🚧 Current Status
-
-The project is still in progress.
-
----
-
 ## 🚀 Live Demo
 
 👉 https://ali-mirzaei-dev.github.io/Cafe-Website/
@@ -25,7 +19,6 @@ The project is still in progress.
 ### Featured Content Section
 
 ![Featured Content Section](https://github.com/user-attachments/assets/c9157377-b931-427d-beea-8e09a3a91891)
-
 
 ---
 
@@ -44,6 +37,14 @@ The purpose of this project is to practice:
 
 * HTML5
 * CSS3
+
+---
+
+## 📌 Project Status
+
+✔ Completed  
+❌ Not responsive (desktop-only)  
+🔄 Future improvement: add responsiveness and JavaScript features  
 
 ---
 ## ⚠️ Disclaimer
